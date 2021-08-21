@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../components/head.ejs'); %>
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo"><span>M</span>EALIFY</a>
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/favourite" class="active">Favourite</a></li>
+                <li><a href="/random">Random</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="meal-container" id="meal-container">
+        <h1 class="heading">Search For Your Favourite Meal</h1>
+        <div class="container">
+            <div class="flex">
+                <form class="flex" id="submit">
+                    <input type="text" id="search" placeholder="Search for meal or keywords" spellcheck="false">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="result-heading" id="result-heading"></div>
+            <div id="meals" class="meals"></div>
+            <div id="single-meal"></div>
+        </div>
+    </section>
+    <%- include('../components/footer.ejs'); %>
+        <script src="Javascript/script.js"></script>
+</body>
+
+</html>

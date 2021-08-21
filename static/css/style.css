@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap');
+
+:root {
+  --primary-yellow-color: #f7ca3e;
+  --secondary-yellow-color: rgb(236, 215, 97);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: 'Thasadith', sans-serif;
+}
+
+*::selection {
+  background-color: var(--primary-yellow-color);
+  color: #111;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header Section Begins Here */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  padding: 1.3rem 10%;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .logo {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+header .logo span {
+  color: var(--primary-yellow-color);
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+header .logo:hover {
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 5rem;
+}
+
+header .navbar ul li a {
+  font-size: 2rem;
+  color: #ddd;
+}
+
+header .navbar ul li a.active {
+  color: var(--primary-yellow-color);
+}
+
+header .navbar ul li a:hover {
+  color: var(--primary-yellow-color);
+  cursor: pointer;
+}
+
+header #menu-bar {
+  font-size: 3rem;
+  color: var(--primary-yellow-color);
+  cursor: pointer;
+  display: none;
+}
+
+/* Header Section Ends Here */
+
+/* Main Section Begins Here  */
+
+.home {
+  margin-top: 7rem;
+  min-height: 100vh;
+  background: url('../Images/home-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content {
+  margin-top: -15rem;
+  text-align: center;
+}
+
+.home .content h1 {
+  font-size: 6rem;
+  color: var(--primary-yellow-color);
+}
+
+.home .content h1 span {
+  color: var(--primary-yellow-color);
+}
+
+.home .content p {
+  font-size: 2rem;
+  color: #fff;
+  width: 90vw;
+  padding-top: 1rem;
+  color: #333;
+}
+
+main {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('../Images/popular-bg.jpg') no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+main .about {
+  padding-bottom: 12rem;
+}
+
+main .about .heading {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 0.5rem;
+  padding-top: 4rem;
+  color: #333;
+}
+
+main .about .heading span {
+  color: var(--primary-yellow-color);
+}
+
+main .about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+
+main .about .about-container .image {
+  flex: 1 1 40rem;
+  height: 40rem;
+  background: url('../Images/about-logo.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: screen;
+  margin-left: 1rem;
+}
+
+main .about .about-container .content {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  text-align: right;
+  padding-right: 5rem;
+}
+
+main .about .about-container .content h3 {
+  font-size: 4rem;
+  color: #333;
+}
+
+main .about .about-container .content p {
+  font-size: 1.7rem;
+  color: #444;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+main .services .heading {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 0.5rem;
+  padding-top: 4rem;
+  color: #333;
+}
+
+main .services .heading span {
+  color: var(--primary-yellow-color);
+}
+
+main .services .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+main .services .box-container .box {
+  background: #fff;
+  width: 35rem;
+  padding: 2rem;
+  margin: 5rem 10rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+main .services .box-container .box img {
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+main .services .box-container .box h3 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+main .services .box-container .box p {
+  font-size: 1.5rem;
+  padding: 1rem 0.1rem;
+}
+
+main .services .box-container .box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+main .services .box-container .box .btn {
+  font-size: 1.7rem;
+  padding: 0.7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background: none;
+  color: #333;
+  cursor: pointer;
+  border: 0.2rem solid var(--primary-yellow-color);
+}
+
+main .services .box-container .box .btn:hover {
+  background: var(--primary-yellow-color);
+}
+
+/* Main Section Ends Here  */
+
+/* Footer Section Begins Here  */
+
+.footer {
+  min-height: 25vh;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+.footer h3 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-yellow-color);
+}
+
+.footer p {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+/* Footer Section Ends Here  */
+
+/* Meal Container Section Begins Here  */
+
+.meal-container {
+  margin-top: 7.8rem;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('../Images/popular-bg.jpg') no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.meal-container .heading {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 0.5rem;
+  padding-top: 4rem;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+.meal-container .container {
+  margin: auto;
+  max-width: 800px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-container .container .flex {
+  display: flex;
+}
+
+.meal-container .container .flex input,
+.meal-container .container .flex button {
+  border: 1px solid #dedede;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 15px;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.meal-container .container .flex input[type='text'] {
+  width: 400px;
+  height: 50px;
+}
+
+.meal-container .container .flex input[type='text']:focus {
+  border: 3px solid var(--primary-yellow-color);
+  border-right: none;
+}
+
+input[type='text']:focus + .search-btn {
+  border: 3px solid var(--primary-yellow-color);
+  border-left: none;
+}
+
+.meal-container .container .flex .search-btn {
+  cursor: pointer;
+  border-left: 0;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  margin-left: -2px;
+}
+
+.meal-container .container .result-heading h2 {
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.meal-container .container .result-heading h2 span {
+  color: var(--primary-yellow-color);
+  font-size: 5rem;
+}
+
+.meal-container .container .meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.meal-container .container .meal {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+
+.meal-container .container .meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+.meal-container .container .meal-info h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.meal-container .container .meal-info p {
+  font-size: 1.05rem;
+  width: 90%;
+  color: #fff;
+}
+
+.meal-container .container .meal:hover .meal-info {
+  opacity: 1;
+}
+
+.meal-container .container .single-meal {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.meal-container .container .single-meal h1 {
+  color: black;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+.meal-container .container .single-meal img {
+  width: 300px;
+  margin: 15px;
+  border: 4px solid white;
+  border-radius: 1.5rem;
+}
+
+.meal-container .container .single-meal-info {
+  margin: 20px;
+  border: 2px dashed var(--secondary-yellow-color);
+  border-radius: 5px;
+}
+
+.meal-container .container .single-meal-info p {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0.3rem;
+}
+
+.meal-container .container .single-meal .main h2 {
+  font-size: 3rem;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.meal-container .container .single-meal .main p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.meal-container .container .single-meal ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.meal-container .container .single-meal ul li {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background-color: var(--secondary-yellow-color);
+  color: #111;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0 5px 5px 0;
+}
+
+.meal-container .container .meal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 4px white solid;
+  border-radius: 1.5rem;
+}
+
+/* Meal Container Section Ends Here  */
+
+/* Random Meal Section Begins Here  */
+
+.random-meal-container {
+  margin-top: 7.8rem;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('../Images/popular-bg.jpg') no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.random-meal-container .container {
+  margin: auto;
+  max-width: 800px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.random-meal-container .container .result-heading h2 {
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.random-meal-container .container .result-heading h2 span {
+  color: var(--primary-yellow-color);
+  font-size: 5rem;
+}
+
+.random-meal-container .container .meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.random-meal-container .container .meal {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+
+.random-meal-container .container .meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+.random-meal-container .container .meal-info h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.random-meal-container .container .meal-info p {
+  font-size: 1.05rem;
+  width: 90%;
+  color: #fff;
+}
+
+.random-meal-container .container .meal:hover .meal-info {
+  opacity: 1;
+}
+
+.random-meal-container .container .single-meal {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.random-meal-container .container .single-meal h1 {
+  color: black;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+.random-meal-container .container .single-meal img {
+  width: 300px;
+  margin: 15px;
+  border: 4px solid white;
+  border-radius: 1.5rem;
+}
+
+.random-meal-container .container .single-meal-info {
+  margin: 20px;
+  border: 2px dashed var(--secondary-yellow-color);
+  border-radius: 5px;
+}
+
+.random-meal-container .container .single-meal-info p {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0.3rem;
+}
+
+.random-meal-container .container .single-meal .main h2 {
+  font-size: 3rem;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.random-meal-container .container .single-meal .main p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.random-meal-container .container .single-meal ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.random-meal-container .container .single-meal ul li {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background-color: var(--secondary-yellow-color);
+  color: #111;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0 5px 5px 0;
+}
+
+.random-meal-container .container .meal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 4px white solid;
+  border-radius: 1.5rem;
+}
+
+/* Random Meal Section Ends Here  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header #menu-bar {
+    display: initial;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 7.3rem;
+    left: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border-top: 1px solid #bbb;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  header .navbar ul li {
+    margin: 1rem;
+    width: 100%;
+    text-align: right;
+    background: #222;
+    padding: 1rem 0;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+
+  .fas.fa-times {
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+  }
+
+  header .navbar.nav-toggle {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .home .content h1 {
+    font-size: 5rem;
+  }
+
+  .home .content p {
+    font-size: 1.8rem;
+  }
+
+  main .about .about-container .content {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .meal-container .container .meals {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .meal-container .container .single-meal h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .meal-container .container .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-container .container .meal {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .meal-container .container .meals {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-container .container .flex input[type='text'] {
+    width: 300px;
+  }
+
+  .meal-container .container .meal {
+    width: 300px;
+    height: 300px;
+  }
+}

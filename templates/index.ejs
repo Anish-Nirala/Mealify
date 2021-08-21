@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../components/head.ejs'); %>
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo"><span>M</span>EALIFY</a>
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/favourite">Favourite</a></li>
+                <li><a href="/random">Random</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Welcome To <span>Mealify</span></h1>
+            <p>Helps You To Get The Recipe For Your Favourite Meal</p>
+        </div>
+    </section>
+    <main class="main" id="main">
+        <section class="about" id="about">
+            <h1 class="heading">About <span>Mealify</span></h1>
+            <div class="about-container">
+                <div class="image"></div>
+                <div class="content">
+                    <h3>Mealify</h3>
+                    <p>A Recipe Finder Website Which Helps You To Know About The Origin Place, Category, Making
+                        Process,
+                        Ingredients
+                        Used In Your Favourite Meal. It Also Provides The Option For Random Meal Which You Can Try
+                        And
+                        Enjoy With Your Families.</p>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h1 class="heading">Our <span>Services</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Images/fav-service.jpg" alt="">
+                    <h3>Favourite Meal</h3>
+                    <p>Search For Your Favourite Meal Here And Get Recipe Of It And Enjoy</p>
+                    <a href="/favourite"><button class="btn">Explore Here</button></a>
+                </div>
+                <div class="box">
+                    <img src="Images/random-service.jpg" alt="">
+                    <h3>Random Meal</h3>
+                    <p>Get Bored By Trying Your Favourite Meal ? Gave A Try To Random Meal And Enjoy</p>
+                    <a href="/random"><button class="btn">Explore Here</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('../components/footer.ejs'); %>
+        <script src="Javascript/script.js"></script>
+</body>
+
+</html>
